@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Note:
+
+- Use `Service.translate(inputText, "en", "hi")` for translating `en` language to any language.
+    ```python
+    > // write your bot's logic in the below function
+    > async function response(inputText){
+    >	return Service.translate(inputText, "en", "hi").then(a => {
+    >        return "Bot: "+a
+    >    });
+    > }
+    ```
+- I have used both types of components: 1. Editor: self storing data in state and 2. ChatBox & ChatThread: storing their data in Redux store.
+
 ## Available Scripts
 
 In the project directory, you can run:
